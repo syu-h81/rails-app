@@ -1,0 +1,21 @@
+.header {
+  height: 80px;
+}
+.header-Inner {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  padding-top: 20px;
+}
+.header-Logo .logo {
+  font-size: 2em;
+}
+.header-Nav_list {
+  display: flex;
+  justify-content: space-around;
+}
+.header-Nav_item {
+  padding: 0 10px;
+}/*# sourceMappingURL=header.css.map */

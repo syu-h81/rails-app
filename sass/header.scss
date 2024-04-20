@@ -1,0 +1,25 @@
+.header {
+  height: 80px;
+  &-Inner {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    padding-top: 20px;
+  }
+  &-Logo {
+    .logo {
+      font-size: 2em;
+    }
+  }
+  &-Nav {
+    &_list {
+      display: flex;
+      justify-content: space-around;
+    }
+    &_item {
+      padding: 0 10px;
+    }
+  }
+}

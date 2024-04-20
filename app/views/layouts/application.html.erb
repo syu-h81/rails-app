@@ -11,6 +11,20 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-Inner">
+        <div class="header-Logo">
+          <h1 class="logo">TweetApp</h1>
+        </div>
+        <nav class="header-Nav">
+          <ul class="header-Nav_list">
+            <li class="header-Nav_item"><%= link_to("TweetAppとは", "/about") %></li>
+            <li class="header-Nav_item"><%= link_to("ログイン", "/") %></li>
+            <li class="header-Nav_item"><%= link_to("新規登録", "/") %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

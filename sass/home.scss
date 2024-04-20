@@ -1,0 +1,28 @@
+.mv {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background-image: url("../../../images/top.jpg");
+  background-color:rgba(0,0,0,0.2);
+  background-blend-mode:lighten;
+  background-size: cover;
+  &-Inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-Heading {
+    color: #fff;
+    text-align: center;
+    padding-top: 40vh;
+    .heading {
+      font-size: 3em;
+      &-Sub {
+        font-size: 1.5em;
+        margin-top: 50px;
+      }
+    }
+  }
+}
