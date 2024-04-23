@@ -1,0 +1,17 @@
+@use "../../global" as g;
+
+.c-heading {
+  font-size: 3em;
+  @include g.mq(md) {
+    font-size: 1.5em;
+    line-height: 180%;
+  }
+  &-Sub {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    @include g.mq(md) {
+      font-size: 1em;
+    }
+  }
+}

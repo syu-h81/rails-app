@@ -316,7 +316,9 @@ textarea {
  * Fix appearance for Firefox
  */
 [type=number] {
-  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 /**
@@ -372,4 +374,82 @@ th {
 th {
   text-align: left;
   font-weight: bold;
-}/*# sourceMappingURL=destyle.css.map */
+}
+
+.l-header {
+  height: 80px;
+}
+.l-header__inner {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  padding-top: 20px;
+}
+.l-header__logo .logo {
+  font-size: 2em;
+}
+.l-header-nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.l-header-nav__item {
+  padding: 0 10px;
+}
+
+.c-heading {
+  font-size: 3em;
+}
+@media screen and (max-width: 768px) {
+  .c-heading {
+    font-size: 1.5em;
+    line-height: 180%;
+  }
+}
+.c-heading-Sub {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .c-heading-Sub {
+    font-size: 1em;
+  }
+}
+
+.p-mv {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background-image: url("../../../images/top.jpg");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .p-mv {
+    background-position-x: 22%;
+  }
+}
+.p-mv__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-mv__heading {
+  color: #fff;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.u-sp-line {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .u-sp-line {
+    display: block;
+  }
+}/*# sourceMappingURL=styles.css.map */

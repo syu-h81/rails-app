@@ -1,0 +1,16 @@
+$breakpoints: (
+  "md": "screen and (max-width: 768px)",
+  "lg": "screen and (max-width: 960px)",
+  "xl": "screen and (max-width: 1140px)",
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 16) * 1rem;
+}

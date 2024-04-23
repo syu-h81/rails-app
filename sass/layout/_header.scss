@@ -1,6 +1,6 @@
-.header {
+.l-header {
   height: 80px;
-  &-Inner {
+  &__inner {
     color: #fff;
     display: flex;
     align-items: center;
@@ -8,17 +8,17 @@
     padding: 0 40px;
     padding-top: 20px;
   }
-  &-Logo {
+  &__logo {
     .logo {
       font-size: 2em;
     }
   }
-  &-Nav {
-    &_list {
+  &-nav {
+    &__list {
       display: flex;
       justify-content: space-around;
     }
-    &_item {
+    &__item {
       padding: 0 10px;
     }
   }
