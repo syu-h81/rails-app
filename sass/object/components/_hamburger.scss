@@ -1,0 +1,23 @@
+@use "../../global" as g;
+
+.c-hamburger {
+  display: none;
+  @include g.mq(md) {
+    display: block;
+    position: relative;
+    width: 3rem;
+    height: 1.4rem;
+  }
+  &__bar {
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    &:nth-child(2) {
+      top: 10px;
+    }
+    &:nth-child(3) {
+      top: 20px;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@use "../global" as g;
+
 .l-header {
   height: 80px;
   &__inner {
@@ -7,13 +9,22 @@
     justify-content: space-between;
     padding: 0 40px;
     padding-top: 20px;
+    @include g.mq(md) {
+      padding: 20px;
+    }
   }
   &__logo {
     .logo {
       font-size: 2em;
+      @include g.mq(md) {
+        font-size: 1.3em;
+      }
     }
   }
   &-nav {
+    @include g.mq(md) {
+      display: none;
+    }
     &__list {
       display: flex;
       justify-content: space-around;

@@ -16,6 +16,11 @@
         <div class="l-header__logo">
           <h1 class="logo">TweetApp</h1>
         </div>
+        <div class="c-hamburger">
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+          <span class="c-hamburger__bar"></span>
+        </div>
         <nav class="l-header-nav">
           <ul class="l-header-nav__list">
             <li class="l-header-nav__item"><%= link_to("TweetAppとは", "/about") %></li>
@@ -25,6 +30,13 @@
         </nav>
       </div>
     </header>
+    <nav class="c-sp-nav">
+      <ul class="c-sp-nav__list">
+        <li class="c-sp-nav__item"><%= link_to("TweetAppとは", "/about") %></li>
+        <li class="c-sp-nav__item"><%= link_to("ログイン", "/") %></li>
+        <li class="c-sp-nav__item"><%= link_to("新規登録", "/") %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
